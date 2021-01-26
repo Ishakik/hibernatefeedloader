@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.4//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.4.dtd">
+
+<hibernate-mapping>
+    <class name="com.job.feedloader.models.Customer" table="Customer">
+        <id name="id"/>
+        <property name="firstName"/>
+        <property name="lastName"/>
+        <one-to-one name="customerOrder" cascade="all"/>
+    </class>
+
+</hibernate-mapping>

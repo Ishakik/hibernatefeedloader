@@ -1,0 +1,4 @@
+id,firstname,lastname,line1,line2,city,state,zip,orderid,ordername,orderprice,deliverydate,line,line2,city,state,zip
+1,bob,stallon,32-6,washington street,washington dc,virginia,200001,1000,amazon alexa,100,01/01/2021,32-6,washington street,washington dc,virginia,200001
+2,Matt,Blank,235-1,James Lane,Las Vegas,Nevada,123456,1001,apple series 5,400,03/02/2021,235-1,James Lane,Las Vegas,Nevada,123456
+3,Max,Pitt,564-32,Mark Dwain Street,Boston,Texas,111111,1002,xbox,500,26/03/2021,564-32,Mark Dwain Street,Boston,Texas,111111
