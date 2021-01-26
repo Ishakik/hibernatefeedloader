@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.4//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.4.dtd">
+
+<hibernate-mapping>
+    <class name="com.job.feedloader.models.CustomerOrder" table="CustomerOrder">
+        <id name="id">
+            <generator class="foreign">
+                <param name="property">customer</param>
+            </generator>
+        </id>
+        <property name="name"></property>
+        <property name="price"></property>
+        <property name="deliveryDate"></property>
+        <one-to-one name="deliveryAddress"></one-to-one>
+        <one-to-one name="customer"></one-to-one>
+    </class>
+</hibernate-mapping>

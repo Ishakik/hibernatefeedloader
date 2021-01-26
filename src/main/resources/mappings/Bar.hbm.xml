@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 5.4//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-5.4.dtd">
+
+<hibernate-mapping>
+    <class name="com.job.feedloader.testmodels.Bar" table="Bar">
+        <id name="id">
+            <generator class="foreign">
+                <param name="property">foo</param>
+            </generator>
+        </id>
+        <property name="fooBar"/>
+        <one-to-one name="foo"></one-to-one>
+
+    </class>
+</hibernate-mapping>
